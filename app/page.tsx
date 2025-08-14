@@ -1,9 +1,6 @@
 "use client";
 
-import {
-	ArrowDownCircleIcon,
-	ArrowUpCircleIcon,
-} from "@heroicons/react/24/outline";
+import FeaturesScroll from "./components/Feature";
 import { useState, useEffect } from "react";
 import ContactPage from "./components/Contact";
 export default function Page() {
@@ -31,6 +28,7 @@ export default function Page() {
 
 	return (
 		<div className="min-h-screen overflow-y-auto ">
+			<FeaturesScroll />
 			<div className=" min-h-screen bg-gradient-to-br from-purple-500 via-indigo-400 to-pink-300 opacity-75 p-6">
 				<header className="text-center py-8">
 					<h1 className="text-4xl md:text-6xl font-extrabold text-blue-800 mb-4">
