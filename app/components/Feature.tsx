@@ -1,5 +1,5 @@
 "use client";
-
+import Image from "next/image";
 export default function FeaturesPhone() {
 	return (
 		<div className="sm:py-16 lg:py-5 bg-gradient-to-br from-purple-500 via-indigo-400 to-pink-300 opacity-75">
@@ -19,9 +19,12 @@ export default function FeaturesPhone() {
 								<div className="animate-scrollY space-y-4">
 									<div className="rounded-lg p-3 shadow bg-gray-700/30">
 										<div className="flex justify-center">
-											<img
-												src="https://images.ctfassets.net/tqjnwzklve0b/514qFd4bKaXqYVBRlIJiVt/502820ea8d188bceebcb98084848c52e/1._Ivory_GentleAloeDetergent_In_Laundry_Basket__68503.jpg"
+											<Image
+												src="/images/images.png"
 												alt="organization"
+												width={80}
+												height={80}
+												className="object-cover"
 											/>
 										</div>
 										<h3 className="text-sm font-semibold text-primary mb-2">
@@ -35,7 +38,7 @@ export default function FeaturesPhone() {
 
 									<div className="rounded-lg p-3 shadow bg-transparent/30">
 										<div className="flex justify-center">
-											<img
+											<Image
 												src="/images/court_schedule.png"
 												alt="schedule"
 												width={96}
@@ -53,7 +56,7 @@ export default function FeaturesPhone() {
 
 									<div className="rounded-lg p-3 shadow  bg-transparent/30">
 										<div className="flex justify-center">
-											<img
+											<Image
 												src="/images/member_control.png"
 												alt="member control"
 												width={96}
@@ -71,7 +74,7 @@ export default function FeaturesPhone() {
 
 									<div className="rounded-lg p-3 shadow  bg-transparent/30">
 										<div className="flex justify-center">
-											<img
+											<Image
 												src="/images/org_management.png"
 												alt="organization"
 												width={80}
@@ -91,7 +94,13 @@ export default function FeaturesPhone() {
 						</div>
 
 						<div className="absolute top-0 inset-x-0 p-3 flex items-center justify-between text-white/90">
-							<img src="/logo.png" alt="logo" width={16} height={16} />
+							<Image
+								src="/logo.png"
+								alt="logo"
+								width={16}
+								height={16}
+								className="object-cover"
+							/>
 							<span className="text-[10px]">12:30</span>
 						</div>
 
@@ -106,11 +115,12 @@ export default function FeaturesPhone() {
             transition-all duration-300 ease-out [transform:rotateY(-6deg)]"
 					>
 						<div className="flex justify-center">
-							<img
-								src="https://images.ctfassets.net/tqjnwzklve0b/514qFd4bKaXqYVBRlIJiVt/502820ea8d188bceebcb98084848c52e/1._Ivory_GentleAloeDetergent_In_Laundry_Basket__68503.jpg"
+							<Image
+								src="/images/object.png"
 								alt="soap"
 								width={128}
 								height={64}
+								className="object-cover"
 							/>
 						</div>
 						<p className="text-xs text-primary mt-1">Organization Management</p>
@@ -122,11 +132,12 @@ export default function FeaturesPhone() {
             transition-all duration-400 ease-out [transform:rotateY(-6deg)]"
 					>
 						<div className="flex justify-center">
-							<img
+							<Image
 								src="/images/court_schedule.png"
 								alt="schedule"
 								width={128}
 								height={64}
+								className="object-cover"
 							/>
 						</div>
 						<p className="font-semibold text-primary text-xs">
@@ -140,11 +151,12 @@ export default function FeaturesPhone() {
             transition-all duration-500 ease-out [transform:rotateY(-6deg)]"
 					>
 						<div className="flex justify-center">
-							<img
+							<Image
 								src="/images/member_control.png"
 								alt="member control"
 								width={128}
 								height={64}
+								className="object-cover"
 							/>
 						</div>
 						<p className="font-semibold text-primary text-xs">
@@ -157,11 +169,12 @@ export default function FeaturesPhone() {
             transition-all duration-300 ease-out [transform:rotateY(6deg)]"
 					>
 						<div className="flex justify-center">
-							<img
+							<Image
 								src="/images/report_analysis.png"
 								alt="report"
 								width={128}
 								height={64}
+								className="object-cover"
 							/>
 						</div>
 						<p className="font-semibold text-primary text-xs">
@@ -175,11 +188,12 @@ export default function FeaturesPhone() {
             transition-all duration-500 ease-out [transform:rotateY(6deg)]"
 					>
 						<div className="flex justify-center">
-							<img
+							<Image
 								src="/images/mobile_friendly.png"
 								alt="mobile"
 								width={128}
 								height={64}
+								className="object-cover"
 							/>
 						</div>
 						<p className="font-semibold text-primary text-xs">

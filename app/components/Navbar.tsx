@@ -1,12 +1,10 @@
 "use client";
-import Link from "next/link";
 import { useEffect, useState } from "react";
-
+import Image from "next/image";
 export default function Navbar() {
 	const [showDropdown, setShowDropdown] = useState(false);
 	const [showDoubleDropdown, setShowDoubleDropdown] = useState(false);
 
-	// Close dropdowns on outside click
 	useEffect(() => {
 		const handleClickOutside = (event: MouseEvent) => {
 			const target = event.target as HTMLElement;
@@ -35,13 +33,12 @@ export default function Navbar() {
 						href="#"
 						className="flex items-center space-x-3 rtl:space-x-reverse"
 					>
-						<img src="logo.png" className="h-8" alt="Sohani Logo" />
+						<Image src="logo.png" width={8} height={8} alt="Sohani Logo" />
 						<span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
 							Sohani
 						</span>
 					</a>
 
-					{/* Mobile menu button — untouched */}
 					<button
 						data-collapse-toggle="navbar-multi-level"
 						type="button"
@@ -71,7 +68,7 @@ export default function Navbar() {
 						className="hidden w-full md:block md:w-auto"
 						id="navbar-multi-level"
 					>
-						<ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-pink-500 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-purple-800 md:dark:bg-purple-900 dark:border-pink-700">
+						<ul className="flex flex-col font-medium p-4 md:p-0 mt-4  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0">
 							<li>
 								<a
 									href="#"
@@ -81,7 +78,6 @@ export default function Navbar() {
 								</a>
 							</li>
 
-							{/* Dropdown */}
 							<li className="relative">
 								<button
 									type="button"
@@ -107,7 +103,6 @@ export default function Navbar() {
 									</svg>
 								</button>
 
-								{/* Dropdown Menu */}
 								<div
 									id="dropdownNavbar"
 									className={`absolute z-50 mt-2 ${
@@ -127,7 +122,6 @@ export default function Navbar() {
 											</a>
 										</li>
 										<li>
-											{/* Sub-dropdown button */}
 											<button
 												id="doubleDropdownButton"
 												type="button"
@@ -154,7 +148,6 @@ export default function Navbar() {
 												</svg>
 											</button>
 
-											{/* Nested dropdown */}
 											<div
 												id="doubleDropdown"
 												className={`absolute z-50 left-full top-0 ml-1 ${
@@ -220,7 +213,6 @@ export default function Navbar() {
 								</div>
 							</li>
 
-							{/* Other nav links */}
 							<li>
 								<a
 									href="#"
